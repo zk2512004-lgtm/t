@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Teacup Puppies</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fff9f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      color: #ff6b81 !important;
+    }
+
+    .nav-link {
+      color: #333 !important;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ff6b81 !important;
+    }
+
+    .hero-about {
+      background: url('https://images.unsplash.com/photo-1583337130417-de1dfb0a8e3d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-about::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .hero-about h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-content h2 {
+      color: #ff6b81;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .about-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      text-align: center;
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #ff6b81;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero-about h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Teacup Puppies</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item"><a class="nav-link" href="demo.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Breeds</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Compare</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-about">
+    <h1>About Teacup Puppies Home</h1>
+  </section>
+
+  <!-- About Content -->
+  <section class="about-content container">
+    <h2>Welcome to Teacup Puppies </h2>
+    <p>
+      Every year, countless puppies find themselves in need of a second chance due to neglect, abuse, or circumstance. We are a non-profit organization dedicated to providing a safe haven for these intelligent and complex puppies.
+    </p>
+    <p>
+      Our mission is to rescue, rehabilitate, and rehome unwanted or neglected puppies, ensuring they receive the specialized care, veterinary attention, and compassion they deserve. Through education and advocacy, we strive to create a world where every puppy is safe, respected, and loved.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; 2025 Teacup Puppies. Designed with ❤️ by Zahid.<br>
+      <a href="https://wa.me/17082704970" target="_blank" title="Chat on WhatsApp" style="margin-right: 15px;">
+        <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.5rem;"></i>
+        <span style="margin-left: 5px;">+1 (708) 270-4970</span>
+      </a><br><br>
+      <a href="mailto:freeparrotadoptioncenter@gmail.com" title="Send Email">
+        <i class="fas fa-envelope" style="color: #EA4335; font-size: 1.5rem;"></i>
+        <span style="margin-left: 5px;">freeparrotadoptioncenter@gmail.com</span>
+      </a><br><br>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

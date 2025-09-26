@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Teacup Puppies</title>
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papLF++CI1tnEv5+j8GVAvbCz4J+uXxUpW8yTzqaq5Zd8s05L8/3tL8hExzJ1ozHyCMlqwQZcZ6Q7F4g9yeTlw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f4;
+      color: #444;
+    }
+
+    header {
+      background-color: #ffc6c6;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #703b3b;
+      font-size: 2.5em;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #703b3b;
+      margin-bottom: 30px;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .contact-icons a {
+      text-decoration: none;
+      color: #703b3b;
+      font-size: 2.5em;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.1);
+      color: #ff8e8e;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1em;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #ffc6c6;
+      color: #703b3b;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #f8a6a6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffeaea;
+      margin-top: 40px;
+      color: #703b3b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Teacup Puppies</h1>
+  </header>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <div class="contact-icons">
+      <!-- Replace with your WhatsApp number -->
+      <a href="https://wa.me/1234567890" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <!-- Replace with your Gmail address -->
+      <a href="mailto:yourname@gmail.com" title="Send an Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- Optional Contact Form -->
+    <form action="mailto:yourname@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Teacup Puppies. All rights reserved.
+  </footer>
+
+</body>
+</html>
